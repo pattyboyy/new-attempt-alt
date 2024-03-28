@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>$SOCK</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.png" alt="$SOCK Logo">
+            </div>
+            <div class="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Menu <i class="fas fa-caret-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#buy-sock">Buy $SOCK</a></li>
+                        <li><a href="#tokenomics">Tokenomics</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#social">Social</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Welcome to $SOCK</h1>
+                <p>The revolutionary cryptocurrency for the DeFi ecosystem.</p>
+                <a href="#buy-sock" class="btn">Buy $SOCK</a>
+                <div class="hero-images">
+                    <img src="assets/images/Screenshot_2024-03-28_153536-removebg-preview.png" alt="Hero Image 1">
+                    <img src="assets/images/Screenshot_2024-03-28_152107-removebg-preview.png" alt="Hero Image 2">
+                </div>
+            </div>
+            <img src="assets/images/Runway_2024-03-28T22_17_53.282Z_Expand_Image-removebg-preview.png" alt="Hero Image" class="hero-image">
+        </section>
+
+        <div class="ticker">
+            <span>$SOCK</span>
+            <span>$SOCK</span>
+            <span>$SOCK</span>
+            <span>$SOCK</span>
+        </div>
+
+        <section class="contract-address">
+            <h2>Contract Address</h2>
+            <div class="address-container">
+                <span id="contractAddress">0x123456789abcdef...</span>
+                <button id="copyButton"><i class="fas fa-copy"></i> Copy</button>
+            </div>
+            <a href="https://etherscan.io/" target="_blank" class="explorer-link">View on Etherscan</a>
+        </section>
+
+        <section id="buy-sock" class="buy-sock">
+            <h2>$SOCK 101</h2>
+            <div class="step">
+                <i class="fas fa-wallet"></i>
+                <h3>Add Base to Metamask</h3>
+                <p>To begin, you'll need to add the Base network to your Metamask wallet. Follow these steps:</p>
+                <ol>
+                    <li>Open Metamask and click on the network dropdown.</li>
+                    <li>Select "Custom RPC" and enter the following details:</li>
+                    <ul>
+                        <li>Network Name: Base</li>
+                        <li>New RPC URL: https://base.example.com</li>
+                        <li>Chain ID: 1234</li>
+                        <li>Symbol: BASE</li>
+                        <li>Block Explorer URL: https://explorer.base.example.com</li>
+                    </ul>
+                    <li>Click "Save" to add the Base network.</li>
+                </ol>
+                <img src="assets/images/MetaMask_Fox.svg.png" alt="Metamask Image" class="step-image">
+            </div>
+            <div class="step">
+                <i class="fas fa-ethereum"></i>
+                <h3>Load up ETH</h3>
+                <p>Next, you'll need to have some ETH in your Metamask wallet to cover gas fees for transactions on the Base network.</p>
+                <p>You can purchase ETH from various exchanges or directly within the Metamask app using a debit/credit card or bank transfer.</p>
+                <img src="assets/images/Screenshot_2024-03-28_170829-removebg-preview.png" alt="ETH Image" class="step-image">
+            </div>
+            <div class="step">
+                <i class="fas fa-shopping-cart"></i>
+                <h3>Buy $SOCK</h3>
+                <p>With ETH in your wallet and the Base network configured, you're ready to purchase $SOCK tokens.</p>
+                <ol>
+                    <li>Visit the <a href="#" target="_blank">Base DEX</a> and connect your Metamask wallet.</li>
+                    <li>Select the $SOCK token from the list of available assets.</li>
+                    <li>Enter the amount of $SOCK you wish to purchase and confirm the transaction.</li>
+                </ol>
+            </div>
+            <div class="step">
+                <i class="fas fa-plus"></i>
+                <h3>Add $SOCK to Wallet</h3>
+                <p>After your purchase is complete, you'll need to add the $SOCK token to your Metamask wallet to view your balance.</p>
+                <ol>
+                    <li>In Metamask, click on "Import Tokens".</li>
+                    <li>Paste the $SOCK contract address: <code>0x123456789abcdef...</code></li>
+                    <li>The $SOCK token should now appear in your wallet with your balance.</li>
+                </ol>
+                <img src="assets/images/pngegg.png" alt="Wallet Image" class="step-image">
+            </div>
+        </section>
+
+        <section id="tokenomics" class="tokenomics">
+            <h2>Tokenomics</h2>
+            <div class="tokenomics-card">
+                <h3>Token Details</h3>
+                <ul>
+                    <li><strong>Token Name:</strong> $SOCK</li>
+                    <li><strong>Token Symbol:</strong> SOCK</li>
+                    <li><strong>Total Supply:</strong> 1,000,000,000 SOCK</li>
+                    <li><strong>Decimals:</strong> 18</li>
+                </ul>
+            </div>
+            <div class="tokenomics-card">
+                <h3>Token Distribution</h3>
+                <ul>
+                    <li><strong>Team:</strong> 10% (vested over 2 years)</li>
+                    <li><strong>Ecosystem Fund:</strong> 20%</li>
+                    <li><strong>Liquidity Pool:</strong> 20%</li>
+                    <li><strong>Public Sale:</strong> 50%</li>
+                </ul>
+            </div>
+            <img src="assets/images/IMG_0125-removebg-preview-removebg-preview (1).png" alt="Tokenomics Image" class="tokenomics-image">
+        </section>
+
+        <section id="faq" class="faq">
+            <h2>FAQ</h2>
+            <div class="faq-item">
+                <h3>What is $SOCK?</h3>
+                <p>$SOCK is a revolutionary cryptocurrency designed for the decentralized finance (DeFi) ecosystem. It aims to provide a secure and efficient way to transact on the Ethereum blockchain.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How can I buy $SOCK?</h3>
+                <p>You can purchase $SOCK tokens on the Base DEX by following the steps outlined in the "$SOCK 101" section of this website.</p>
+            </div>
+            <div class="faq-item">
+                <h3>What are the benefits of holding $SOCK?</h3>
+                <p>Holding $SOCK tokens entitles you to various benefits within the $SOCK ecosystem, such as staking rewards, governance rights, and access to exclusive features and services.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Is $SOCK secure?</h3>
+                <p>Yes, $SOCK utilizes advanced security measures and is built on the secure and battle-tested Ethereum blockchain. Additionally, the $SOCK smart contracts have been audited by reputable third-party auditors.</p>
+            </div>
+            <div class="faq-item">
+                <h3>What is the purpose of $SOCK?</h3>
+                <p>The primary purpose of $SOCK is to facilitate secure and efficient transactions within the DeFi ecosystem, enabling users to participate in various decentralized financial services and applications.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How is $SOCK different from other cryptocurrencies?</h3>
+                <p>$SOCK stands out with its unique tokenomics and governance model, which incentivizes active participation and contribution to the ecosystem. Additionally, $SOCK aims to leverage cutting-edge technologies to improve scalability and user experience.</p>
+            </div>
+            <img src="assets/images/FAQ.png" alt="FAQ Image" class="faq-image">
+        </section>
+
+        <section id="social" class="social">
+            <h2>Join the $SOCK Community</h2>
+            <ul>
+                <li><a href="#" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
+                <li><a href="#" target="_blank"><i class="fab fa-discord"></i> Discord</a></li>
+                <li><a href="#" target="_blank"><i class="fab fa-telegram"></i> Telegram</a></li>
+            </ul>
+            <p>Email: info@sock.com</p>
+            <img src="assets/images/Screenshot_2024-03-28_152107-removebg-preview.png" alt="Social Image" class="social-image">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 $SOCK. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
