@@ -203,10 +203,18 @@ nav {
     transform: translateY(50%);
 }
 
-.ticker {
+.ticker-container {
     background-color: #0066cc;
+    padding: 5px 0;
+    overflow: hidden;
+    border-top: 4px solid #fff;
+    border-bottom: 4px solid #fff;
+}
+
+.ticker {
+    background: linear-gradient(to right, #0066cc, #004080);
     color: #fff;
-    padding: 10px;
+    padding: 15px;
     overflow: hidden;
     white-space: nowrap;
     width: 100%;
@@ -216,16 +224,25 @@ nav {
     display: inline-block;
     padding-right: 100px;
     animation: ticker 10s linear infinite;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.ticker:hover {
+    animation-play-state: paused;
 }
 
 @keyframes ticker {
     0% {
-        transform: translateX(0);
+        transform: translateX(100%);
     }
     100% {
         transform: translateX(-100%);
     }
 }
+
+
 
 main {
     padding-top: 80px; /* Adjust this value based on the height of your navigation bar */
