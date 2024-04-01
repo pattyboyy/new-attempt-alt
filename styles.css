@@ -117,9 +117,15 @@ nav {
 }
 
 .hero-content {
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
-    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-text {
+    margin-bottom: 40px;
 }
 
 .hero h1 {
@@ -147,74 +153,34 @@ nav {
     background-color: #004080;
 }
 
-.hero-images {
-    position: relative;
-    width: 400px;
-    height: 400px;
-    margin: 0 auto;
-}
-
-.hero-images img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    animation: rotate 10s linear infinite;
-    transition: transform 0.3s ease;
-}
-
-.hero-images img:hover {
-    transform: scale(1.1);
-}
-
-.hero-images img:nth-child(1) {
-    animation-delay: 0s;
-}
-
-.hero-images img:nth-child(2) {
-    animation-delay: 5s;
-}
-
-@keyframes rotate {
-    0% {
-        opacity: 0;
-        transform: rotate(0deg) scale(0.8);
-    }
-    25% {
-        opacity: 1;
-        transform: rotate(90deg) scale(1);
-    }
-    50% {
-        opacity: 1;
-        transform: rotate(180deg) scale(1.2);
-    }
-    75% {
-        opacity: 1;
-        transform: rotate(270deg) scale(1);
-    }
-    100% {
-        opacity: 0;
-        transform: rotate(360deg) scale(0.8);
-    }
-}
-
-.fade-in {
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-}
-
-.fade-in.visible {
-    opacity: 1;
+.hero-image-container {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 40px;
 }
 
 .hero-image {
-    position: absolute;
-    bottom: 50%;
-    right: 0;
-    max-width: 50%;
-    z-index: 0;
-    opacity: 0.5;
-    transform: translateY(50%);
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+@media (min-width: 769px) {
+    .hero-content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .hero-text {
+        margin-bottom: 0;
+        margin-right: 40px;
+        text-align: left;
+    }
+
+    .hero-image-container {
+        margin-top: 0;
+    }
 }
 
 .ticker-container {
@@ -473,7 +439,7 @@ h2:hover {
     max-width: 300px;
     margin: 20px auto 0;
     display: block;
-    opacity: 0.8;
+    opacity: 1;
     transition: transform 0.3s ease;
 }
 
@@ -497,7 +463,7 @@ h2:hover {
     max-width: 200px;
     margin: 20px auto 0;
     display: block;
-    opacity: 0.7;
+    opacity: 1;
     transition: transform 0.3s ease;
 }
 
@@ -542,7 +508,7 @@ h2:hover {
     max-width: 300px;
     margin: 20px auto 0;
     display: block;
-    opacity: 0.6;
+    opacity: 1;
     transition: transform 0.3s ease;
 }
 
