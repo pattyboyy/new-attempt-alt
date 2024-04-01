@@ -313,8 +313,62 @@ h2:hover {
     text-align: center;
 }
 
+/* styles.css */
+/* ... existing styles ... */
+
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.about-content {
+    max-width: 800px;
+    padding: 30px;
+    background-color: transparent;
+    border-radius: 8px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    margin-right: 40px;
+    margin-bottom: 40px;
+}
+
+.about-content p {
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
 .image-container {
-    text-align: center;
+    max-width: 400px;
+    margin-left: 40px;
+}
+
+.about-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.about-image:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-content {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .image-container {
+        margin-left: 0;
+    }
 }
 
 .buy-cock {
@@ -431,6 +485,9 @@ h2:hover {
     font-weight: 700;
     margin-bottom: 10px;
     color: #0066cc;
+    background-color: transparent;
+    border-radius: 8px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
     transition: color 0.3s ease;
 }
 
