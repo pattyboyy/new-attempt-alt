@@ -117,15 +117,9 @@ nav {
 }
 
 .hero-content {
-    max-width: 1200px;
+    max-width: 800px;
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.hero-text {
-    margin-bottom: 40px;
+    z-index: 1;
 }
 
 .hero h1 {
@@ -153,33 +147,27 @@ nav {
     background-color: #004080;
 }
 
-.hero-image-container {
-    width: 100%;
-    max-width: 400px;
+.hero-images {
     margin-top: 40px;
 }
 
-.hero-image {
+.hero-images img {
+    max-width: 400px;
     width: 100%;
     height: auto;
-    object-fit: contain;
 }
 
-@media (min-width: 769px) {
-    .hero-content {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
+@media (max-width: 768px) {
+    .hero {
+        padding: 60px 20px;
     }
 
-    .hero-text {
-        margin-bottom: 0;
-        margin-right: 40px;
-        text-align: left;
+    .hero h1 {
+        font-size: 36px;
     }
 
-    .hero-image-container {
-        margin-top: 0;
+    .hero p {
+        font-size: 18px;
     }
 }
 
