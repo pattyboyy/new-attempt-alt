@@ -31,15 +31,18 @@ header {
 nav {
     display: flex;
     align-items: center;
+    justify-content: flex-start;
+    width: 100%;
 }
 
-.logo img {
-    max-height: 40px;
-    transition: transform 0.3s ease;
+.nav-toggle {
+    display: none;
+    cursor: pointer;
+    margin-right: 20px;
 }
 
-.logo img:hover {
-    transform: scale(1.1);
+.nav-toggle i {
+    font-size: 24px;
 }
 
 .nav-menu {
@@ -48,10 +51,7 @@ nav {
     padding: 0;
     display: flex;
     align-items: center;
-}
-
-.nav-menu li {
-    position: relative;
+    margin-right: auto;
 }
 
 .nav-menu li a {
@@ -62,9 +62,23 @@ nav {
     transition: background-color 0.3s ease;
 }
 
-.nav-menu li a:hover {
-    background-color: #004080;
+.logo img {
+    max-height: 40px;
+    margin-right: 20px;
 }
+
+.nav-title {
+    font-family: 'Bubblegum Sans', cursive;
+    font-size: 36px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
 
 .dropdown-menu {
     display: none;
@@ -242,10 +256,8 @@ nav {
     }
 }
 
-
-
 main {
-    padding-top: 80px; /* Adjust this value based on the height of your navigation bar */
+    padding-top: 100px;
     max-width: 800px;
     margin: 0 auto;
     padding-bottom: 40px;
