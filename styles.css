@@ -15,12 +15,17 @@ h1 {
 }
 
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     background-color: #0066cc;
     color: #fff;
     padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 999;
 }
 
 nav {
@@ -30,6 +35,11 @@ nav {
 
 .logo img {
     max-height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.1);
 }
 
 .nav-menu {
@@ -53,7 +63,7 @@ nav {
 }
 
 .nav-menu li a:hover {
-    background-color: rg#0066cc;
+    background-color: #004080;
 }
 
 .dropdown-menu {
@@ -76,6 +86,11 @@ nav {
 
 .nav-toggle i {
     font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.nav-toggle i:hover {
+    color: #ccc;
 }
 
 .hero {
@@ -118,8 +133,6 @@ nav {
     background-color: #004080;
 }
 
-/* Add the following styles */
-
 .hero-images {
     position: relative;
     width: 400px;
@@ -133,6 +146,11 @@ nav {
     left: 0;
     opacity: 0;
     animation: rotate 10s linear infinite;
+    transition: transform 0.3s ease;
+}
+
+.hero-images img:hover {
+    transform: scale(1.1);
 }
 
 .hero-images img:nth-child(1) {
@@ -210,9 +228,10 @@ nav {
 }
 
 main {
+    padding-top: 80px; /* Adjust this value based on the height of your navigation bar */
     max-width: 800px;
     margin: 0 auto;
-    padding: 40px 20px;
+    padding-bottom: 40px;
     background-color: #c2e1ff;
 }
 
@@ -226,6 +245,11 @@ h2 {
     margin-bottom: 20px;
     text-align: center;
     color: #0066cc;
+    transition: color 0.3s ease;
+}
+
+h2:hover {
+    color: #004080;
 }
 
 .address-container {
@@ -242,6 +266,11 @@ h2 {
     border-radius: 4px;
     font-family: monospace;
     margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+#contractAddress:hover {
+    background-color: #333;
 }
 
 #copyButton {
@@ -272,6 +301,14 @@ h2 {
     color: #004080;
 }
 
+.image-spot {
+    text-align: center;
+}
+
+.image-container {
+    text-align: center;
+}
+
 .buy-cock {
     text-align: center;
 }
@@ -291,7 +328,12 @@ h2 {
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: left;
-    color: #ffffff; /* Added to make the text inside the boxes white */
+    color: #ffffff;
+    transition: transform 0.3s ease;
+}
+
+.step:hover {
+    transform: translateY(-5px);
 }
 
 .step-icon {
@@ -299,12 +341,22 @@ h2 {
     color: #ffffff;
     margin-bottom: 20px;
     text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.step-icon:hover {
+    transform: scale(1.1);
 }
 
 .step-content h3 {
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.step-content h3:hover {
+    color: #ccc;
 }
 
 .step-content p {
@@ -329,14 +381,24 @@ h2 {
 
 .step i {
     font-size: 48px;
-    color: #ffffff; /* Updated to make the icon color white */
+    color: #ffffff;
     margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.step i:hover {
+    transform: scale(1.1);
 }
 
 .step h3 {
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.step h3:hover {
+    color: #ccc;
 }
 
 .step ol,
@@ -349,6 +411,11 @@ h2 {
     display: block;
     margin: 20px auto 0;
     opacity: 1;
+    transition: transform 0.3s ease;
+}
+
+.step-image:hover {
+    transform: scale(1.1);
 }
 
 .tokenomics-card h3 {
@@ -356,6 +423,11 @@ h2 {
     font-weight: 700;
     margin-bottom: 10px;
     color: #0066cc;
+    transition: color 0.3s ease;
+}
+
+.tokenomics-card h3:hover {
+    color: #004080;
 }
 
 .tokenomics-card ul {
@@ -373,6 +445,11 @@ h2 {
     margin: 20px auto 0;
     display: block;
     opacity: 0.8;
+    transition: transform 0.3s ease;
+}
+
+.tokenomics-image:hover {
+    transform: scale(1.1);
 }
 
 .faq-item h3 {
@@ -380,6 +457,11 @@ h2 {
     font-weight: 700;
     margin-bottom: 10px;
     color: #0066cc;
+    transition: color 0.3s ease;
+}
+
+.faq-item h3:hover {
+    color: #004080;
 }
 
 .faq-image {
@@ -387,6 +469,11 @@ h2 {
     margin: 20px auto 0;
     display: block;
     opacity: 0.7;
+    transition: transform 0.3s ease;
+}
+
+.faq-image:hover {
+    transform: scale(1.1);
 }
 
 .social ul {
@@ -415,6 +502,11 @@ h2 {
     text-align: center;
     margin-top: 20px;
     color: #0066cc;
+    transition: color 0.3s ease;
+}
+
+.social p:hover {
+    color: #004080;
 }
 
 .social-image {
@@ -422,6 +514,11 @@ h2 {
     margin: 20px auto 0;
     display: block;
     opacity: 0.6;
+    transition: transform 0.3s ease;
+}
+
+.social-image:hover {
+    transform: scale(1.1);
 }
 
 footer {
