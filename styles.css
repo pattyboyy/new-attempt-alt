@@ -132,6 +132,7 @@ nav {
     margin-bottom: 40px;
 }
 
+/* styles.css */
 .btn {
     display: inline-block;
     background-color: #0066cc;
@@ -141,10 +142,24 @@ nav {
     border-radius: 4px;
     font-weight: bold;
     transition: background-color 0.3s ease;
+    animation: pulse 2s infinite;
 }
 
 .btn:hover {
     background-color: #004080;
+    animation: none;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 .hero-images {
@@ -235,48 +250,58 @@ h2:hover {
     color: #004080;
 }
 
+/* styles.css */
+/* ... existing styles ... */
+
+.contract-address {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.contract-address h2 {
+    margin-bottom: 10px;
+}
+
 .address-container {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #f2f2f2;
+    padding: 10px 15px;
+    border-radius: 8px;
     margin-bottom: 20px;
 }
 
 #contractAddress {
-    background-color: #000;
-    color: #fff;
-    padding: 10px 15px;
-    border-radius: 4px;
-    font-family: monospace;
+    background-color: transparent;
+    color: #333;
+    padding: 0;
     margin-right: 10px;
-    transition: background-color 0.3s ease;
-}
-
-#contractAddress:hover {
-    background-color: #333;
+    font-family: monospace;
+    font-size: 16px;
 }
 
 #copyButton {
-    background-color: #000;
+    background-color: #0066cc;
     color: #fff;
     border: none;
-    padding: 10px 15px;
+    padding: 8px 16px;
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    font-size: 14px;
 }
 
 #copyButton:hover {
-    background-color: #333;
+    background-color: #004080;
 }
 
 .explorer-link {
-    display: block;
-    text-align: center;
     color: #0066cc;
     text-decoration: none;
     font-weight: 700;
-    margin-top: 10px;
     transition: color 0.3s ease;
 }
 
