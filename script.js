@@ -22,7 +22,7 @@ const backgroundAnimation = document.querySelector('.background-animation');
 
 function createFallingImage() {
     const fallingImage = document.createElement('img');
-    fallingImage.src = 'assets/images/fAdgsdgasd-removebg-preview.png';
+    fallingImage.src = '/images/fAdgsdgasd-removebg-preview.png';
     fallingImage.alt = 'Falling Image';
     fallingImage.classList.add('falling-image');
     fallingImage.style.left = `${Math.random() * window.innerWidth}px`;
