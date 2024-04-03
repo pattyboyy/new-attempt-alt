@@ -108,7 +108,7 @@ nav {
 }
 
 .hero {
-    background-color: #c2e1ff;
+    background-color: transparent;
     color: #0066cc;
     padding: 100px 20px;
     text-align: center;
@@ -230,7 +230,7 @@ main {
     max-width: 800px;
     margin: 0 auto;
     padding-bottom: 40px;
-    background-color: #c2e1ff;
+    background-color: transparent;
 }
 
 section {
@@ -512,6 +512,7 @@ h2:hover {
     transform: scale(1.1);
 }
 
+
 .social ul {
     list-style-type: none;
     padding: 0;
@@ -528,6 +529,13 @@ h2:hover {
     text-decoration: none;
     font-size: 24px;
     transition: color 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
 }
 
 .social ul li a:hover {
@@ -611,5 +619,34 @@ footer {
     .social-image {
         max-width: 100%;
         opacity: 1;
+    }
+}
+
+
+/* Background animation */
+.background-animation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.falling-image {
+    position: absolute;
+    top: -100px;
+    width: 100px;
+    height: auto;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-100px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
     }
 }

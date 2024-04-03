@@ -17,6 +17,27 @@ navToggle.addEventListener('click', () => {
     nav.classList.toggle('open');
 });
 
+// Background animation
+const backgroundAnimation = document.querySelector('.background-animation');
+
+function createFallingImage() {
+    const fallingImage = document.createElement('img');
+    fallingImage.src = 'assets/images/fAdgsdgasd-removebg-preview.png';
+    fallingImage.alt = 'Falling Image';
+    fallingImage.classList.add('falling-image');
+    fallingImage.style.left = `${Math.random() * window.innerWidth}px`;
+    fallingImage.style.animationDuration = `${Math.random() * 3 + 2}s`;
+    backgroundAnimation.appendChild(fallingImage);
+
+    setTimeout(() => {
+        fallingImage.remove();
+    }, 5000);
+}
+
+setInterval(createFallingImage, 1000);
+
+setInterval(startBackgroundAnimation, 3000);
+
 // Fade in images on scroll
 const fadeInImages = document.querySelectorAll('.fade-in');
 
