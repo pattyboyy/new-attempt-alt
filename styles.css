@@ -389,9 +389,10 @@ h2:hover {
     background-color: #0066cc;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: left;
+    text-align: center;
     color: #ffffff;
     transition: transform 0.3s ease;
+    margin-bottom: 40px;
 }
 
 .step:hover {
@@ -404,6 +405,10 @@ h2:hover {
     margin-bottom: 20px;
     text-align: center;
     transition: transform 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
 }
 
 .step-icon:hover {
@@ -436,42 +441,11 @@ h2:hover {
     margin-bottom: 5px;
 }
 
-.step {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.step i {
-    font-size: 48px;
-    color: #ffffff;
-    margin-bottom: 10px;
-    transition: transform 0.3s ease;
-}
-
-.step i:hover {
-    transform: scale(1.1);
-}
-
-.step h3 {
-    font-size: 24px;
-    font-weight: 700;
-    margin-bottom: 10px;
-    transition: color 0.3s ease;
-}
-
-.step h3:hover {
-    color: #ccc;
-}
-
-.step ol,
-.step ul {
-    padding-left: 20px;
-}
-
 .step-image {
-    max-width: 200px;
+    max-width: 100px;
+    max-height: 100px;
     display: block;
-    margin: 20px auto 0;
+    margin: 0 auto;
     opacity: 1;
     transition: transform 0.3s ease;
 }
