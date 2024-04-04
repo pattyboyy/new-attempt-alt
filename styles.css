@@ -643,3 +643,14 @@ footer {
         transform: translateY(100vh) rotate(360deg);
     }
 }
+
+.social ul li .social-logo {
+    max-width: 24px;
+    max-height: 24px;
+    vertical-align: middle;
+    transition: transform 0.3s ease;
+}
+
+.social ul li .social-logo:hover {
+    transform: scale(1.1);
+}
