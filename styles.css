@@ -644,13 +644,24 @@ footer {
     }
 }
 
-.social ul li .social-logo {
-    max-width: 24px;
-    max-height: 24px;
-    vertical-align: middle;
+.social ul li .social-logo-container {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #0066cc;
+    transition: color 0.3s ease;
+}
+
+.social ul li .social-logo-container:hover {
+    color: #004080;
+}
+
+.social ul li .social-logo-container i {
+    font-size: 24px;
+    margin-right: 8px;
     transition: transform 0.3s ease;
 }
 
-.social ul li .social-logo:hover {
+.social ul li .social-logo-container:hover i {
     transform: scale(1.1);
 }
