@@ -517,11 +517,12 @@ h2:hover {
     list-style-type: none;
     padding: 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
 .social ul li {
-    margin-right: 20px;
+    margin: 10px;
 }
 
 .social ul li a {
